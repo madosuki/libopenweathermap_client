@@ -9,15 +9,10 @@ required JSON-C
 # Build
 ### First (If you already do that skip.)
 ```
-git submodule init
+git submodule init　＆＆　git submodule update
 ```
 
-### Second
-```
-git submodule update
-```
-
-### Third
+### 
 ```
 mkdir -p build && cd build && cmake .. && cmake --build .
 ```
