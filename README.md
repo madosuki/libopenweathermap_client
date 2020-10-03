@@ -6,18 +6,18 @@ Dependents my libhttp_connector. So before build must do 'git submodule init' an
 using build tool of CMake.  
   
 required JSON-C  
-#Build
-## First (If you already do that skip.)
+# Build
+### First (If you already do that skip.)
 ```
 git submodule init
 ```
 
-## Second
+### Second
 ```
 git submodule update
 ```
 
-## Third
+### Third
 ```
 mkdir -p build && cd build && cmake .. && cmake --build .
 ```
