@@ -1,0 +1,6 @@
+[submodule "foreign_lib/libhttp_connector"]
+	path = foreign_lib/libhttp_connector
+	url = git@github.com:madosuki/libhttp_connector.git
+[submodule "libhttp_connector"]
+	path = libhttp_connector
+	url = git@github.com:madosuki/libhttp_connector.git
