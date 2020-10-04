@@ -15,7 +15,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/libhttp_connector)
 #   target_link_libraries(http_connector wsock32 ws2_32)
 # endif(MINGW)
 
-add_library(openweathermap_client ${CMAKE_SOURCE_DIR}/src/openweather.c)
+add_library(openweathermap_client ${PROJECT_SOURCE_DIR}/src/openweather.c)
 target_link_libraries(openweathermap_client http_connector)
 target_link_libraries(openweathermap_client ${JSONC_LIBRARIES})
 
