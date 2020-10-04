@@ -3,7 +3,7 @@
 
 #include <json-c/json.h>
 
-#include "../../libhttp_connector/src/http_connector.h"
+#include "../libhttp_connector/src/http_connector.h"
 
 typedef struct OpenWeatherMapCoordStruct {
   double longitude;
