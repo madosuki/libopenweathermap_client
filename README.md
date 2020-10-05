@@ -2,6 +2,8 @@
 this Program is openweathermap client library.  
   
 Dependents my libhttp_connector. So before build must do 'git submodule init' and 'git submodule update'.  
+
+support only Linux and MinGW.  
   
 using build tool of CMake.  
   
