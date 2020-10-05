@@ -19,7 +19,7 @@ mkdir -p build && cd build && cmake .. && cmake --build .
 
 # Usage
 link this library then call function of get_openweather_map_current_data(openweather_query_s *query)
-```
+```c
   openweather_query_s query = {};
   query.api_key = "your api key";
 
@@ -34,7 +34,7 @@ link this library then call function of get_openweather_map_current_data(openwea
 ```
 
 openweather_query_s is data struct for GET query. But current support only city name and api key. 
-```
+```c
 typedef struct OpenWeatherMapQueryStruct {
   char *city_name;
   int city_id;
@@ -53,7 +53,7 @@ typedef struct OpenWeatherMapQueryStruct {
 ```
 
 get result value of type is openweather_map_current_s.
-```
+```c
 typedef struct OpenWeatherMapCurrent {
   openweather_coord_s *coord;
   openweather_weather_s *weather;
