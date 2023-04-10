@@ -63,6 +63,9 @@ char *convert_json_string_to_c_string(struct json_object *obj)
   }
 
   ssize_t tmp_size = strlen(tmp) - 2;
+  if (tmp_size < 1) {
+    return NULL;
+  }
 
   char *result = INIT_ARRAY(char, tmp_size);
   if(result == NULL) {
